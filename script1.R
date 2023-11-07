@@ -24,7 +24,6 @@ mean(datos_vinos$price, na.rm = TRUE)
 median(datos_vinos$price, na.rm = TRUE) #mediana
 
 
-#b.Limpieza y Tratamiento de Datos:
 #Limpieza y Tratamiento de Datos:
 
 #detectar valores duplicados 
@@ -85,7 +84,6 @@ boxplot(datos_vinos$price, main = "Diagrama de Caja de Precio", ylab = "Precio",
 boxplot(datos_vinos$points, main = "Diagrama de Caja de Puntos", ylab = "Puntos", col = "lightgreen")
 
 
-
 #Histograma 
 hist(datos_vinos$points, main = "Histograma de Puntuaciones de Vinos", xlab = "Puntuación", ylab = "Frecuencia")
 
@@ -94,7 +92,7 @@ hist(datos_vinos$points, main = "Histograma de Puntuaciones de Vinos", xlab = "P
 country <- c("US","France","Italy","Spain")
 points <- c(88, 87, 90, 89)
 price <- c(37,20,25,15)
-
+<<<<<<<< HEAD:Scripts/script1.R
 
 
 
@@ -151,6 +149,7 @@ print(tabla_frecuencias)
 barplot(tabla_frecuencias, 
         main="Distribución de Países de Origen",
         xlab="País de Origen", ylab="Frecuencia")
+
 
 
 
