@@ -41,17 +41,14 @@ Caja de dispersion de puntos sin atipicos
 ![image](./Imagenes/Puntos-sin-valores-atipicos.jpeg "Puntos sin atipicos")
 
 
-
-Comparacion de precios por pais de origne
+Comparación de precios por país de origen.
 
 ![image](./Imagenes/Analisis-bivariable.png)
 
-Puntuacion por pais
-
-Se hizo 4 vectores con los 4 datos mas repetitivos de la columna(pais,puntuacion y precio) se llego al analisis de que Italia es el mejor pais en vinos
+Puntuacion por país, se hicieron 4 vectores con los 4 datos mas repetitivos de la columna(país,puntuación y precio) se llego al analisis de que Italia es el mejor pais puntuado en vinos. 
 
 ![image](./Imagenes/Puntos-por-pais.png)
 
-Y con los precios mas altos es Estados Unidos
+Y con los precios mas altos es Estados Unidos.
 
 ![image](./Imagenes/Precio-por-pais.png)

@@ -1,3 +1,6 @@
+
+#Michelle Castrillo y Yordi Morales
+
 #Se cargan los datos del archivo 
 datos_vinos <- read.csv("files/estadisticas_vinos.csv")
 
