@@ -1,4 +1,4 @@
-2#Se cargan los datos del archivo 
+#Se cargan los datos del archivo 
 datos_vinos <- read.csv("files/estadisticas_vinos.csv")
 
 #Exploración Inicial de los Datos:
@@ -18,13 +18,12 @@ View(datos_vinos)
 summary(datos_vinos$points)
 summary(datos_vinos$price)
 
-#media
-mean(datos_vinos$price, na.rm = TRUE) 
-#mediana
+
+mean(datos_vinos$price, na.rm = TRUE) #media
 median(datos_vinos$price, na.rm = TRUE) #mediana
 
 
-#b.Limpieza y Tratamiento de Datos:
+#Limpieza y Tratamiento de Datos:
 
 #detectar valores duplicados 
 sum(duplicated(datos_vinos))
@@ -84,7 +83,7 @@ boxplot(datos_vinos$price, main = "Diagrama de Caja de Precio", ylab = "Precio",
 boxplot(datos_vinos$points, main = "Diagrama de Caja de Puntos", ylab = "Puntos", col = "lightgreen")
 
 
-#histograma 
+#Histograma 
 hist(datos_vinos$points, main = "Histograma de Puntuaciones de Vinos", xlab = "Puntuación", ylab = "Frecuencia")
 
 
@@ -105,7 +104,7 @@ agrupacion_1 <- data.frame(
 )
 
 
-#Grafico pais con los mejores vinos
+#Grafico pais por puntuacion
 grafico <- ggplot(agrupacion_1, aes(x = country, y = points, fill = country)) +
   geom_bar(stat = "identity") +
   labs(title = "Puntuación por País", x = "País", y = "Puntuación") +
@@ -114,7 +113,7 @@ grafico <- ggplot(agrupacion_1, aes(x = country, y = points, fill = country)) +
 
 print(grafico)
 
-#Grafico pais con el precio mas alto
+#Grafico pais por precio
 grafico <- ggplot(agrupacion_1, aes(x = country, y = price, fill = country)) +
   geom_bar(stat = "identity") +
   labs(title = "Precio por País", x = "País", y = "Precio") +
@@ -148,4 +147,11 @@ print(tabla_frecuencias)
 barplot(tabla_frecuencias, 
         main="Distribución de Países de Origen",
         xlab="País de Origen", ylab="Frecuencia")
+
+
+
+
+
+
+
 
