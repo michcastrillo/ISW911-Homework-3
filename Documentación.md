@@ -14,6 +14,7 @@ Analisis de la columna precio y puntos
 
 ![image](./Imagenes/Media-cuartiles-min-max.png "Cantidad de nulos y en blanco")
 
+
 Se cambian los valores en blanco por ´Desconocido´
 
 ![image](./Imagenes/Desconocido.png "Desconocido")

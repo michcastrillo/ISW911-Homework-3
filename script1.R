@@ -24,11 +24,8 @@ mean(datos_vinos$price, na.rm = TRUE)
 median(datos_vinos$price, na.rm = TRUE) #mediana
 
 
-<<<<<<<< HEAD:Scripts/script1.R
 #b.Limpieza y Tratamiento de Datos:
-========
 #Limpieza y Tratamiento de Datos:
->>>>>>>> af26710fbe4c15937c51bb0c5b23da0ae0763651:script1.R
 
 #detectar valores duplicados 
 sum(duplicated(datos_vinos))
@@ -88,11 +85,8 @@ boxplot(datos_vinos$price, main = "Diagrama de Caja de Precio", ylab = "Precio",
 boxplot(datos_vinos$points, main = "Diagrama de Caja de Puntos", ylab = "Puntos", col = "lightgreen")
 
 
-<<<<<<<< HEAD:Scripts/script1.R
-#histograma 
-========
+
 #Histograma 
->>>>>>>> af26710fbe4c15937c51bb0c5b23da0ae0763651:script1.R
 hist(datos_vinos$points, main = "Histograma de Puntuaciones de Vinos", xlab = "Puntuación", ylab = "Frecuencia")
 
 
@@ -100,8 +94,7 @@ hist(datos_vinos$points, main = "Histograma de Puntuaciones de Vinos", xlab = "P
 country <- c("US","France","Italy","Spain")
 points <- c(88, 87, 90, 89)
 price <- c(37,20,25,15)
-<<<<<<<< HEAD:Scripts/script1.R
-========
+
 
 
 
@@ -158,38 +151,6 @@ print(tabla_frecuencias)
 barplot(tabla_frecuencias, 
         main="Distribución de Países de Origen",
         xlab="País de Origen", ylab="Frecuencia")
-
->>>>>>>> af26710fbe4c15937c51bb0c5b23da0ae0763651:script1.R
-
-
-
-# Crear un data frame con las variables country, points y price
-library(ggplot2)
-
-agrupacion_1 <- data.frame(
-  country = c("US", "France", "Italy", "Spain"),
-  points = c(88, 87, 90, 89),
-  price = c(37, 20, 25, 15)
-)
-
-
-#Grafico pais con los mejores vinos
-grafico <- ggplot(agrupacion_1, aes(x = country, y = points, fill = country)) +
-  geom_bar(stat = "identity") +
-  labs(title = "Puntuación por País", x = "País", y = "Puntuación") +
-  theme_minimal()
-
-
-print(grafico)
-
-#Grafico pais con el precio mas alto
-grafico <- ggplot(agrupacion_1, aes(x = country, y = price, fill = country)) +
-  geom_bar(stat = "identity") +
-  labs(title = "Precio por País", x = "País", y = "Precio") +
-  theme_minimal()
-
-
-print(grafico)
 
 
 
